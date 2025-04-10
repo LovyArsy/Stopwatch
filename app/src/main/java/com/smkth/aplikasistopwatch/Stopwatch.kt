@@ -1,5 +1,9 @@
 package com.smkth.aplikasistopwatch
 
+<<<<<<< HEAD
+=======
+import android.content.Intent
+>>>>>>> 4473219 (lissa)
 import android.os.Bundle
 import android.os.Handler
 import android.os.Looper
@@ -8,15 +12,24 @@ import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import com.smkth.aplikasistopwatch.databinding.ActivityStopwatchBinding
 
+<<<<<<< HEAD
 class Stopwatch : AppCompatActivity() {
 
+=======
+
+class Stopwatch : AppCompatActivity() {
+>>>>>>> 4473219 (lissa)
     private lateinit var binding: ActivityStopwatchBinding
     private var isRunning = false
     private var startTime = 0L
     private var elapsedTime = 0L
+<<<<<<< HEAD
 
     private val handler = Handler(Looper.getMainLooper())
 
+=======
+    private val handler = Handler(Looper.getMainLooper())
+>>>>>>> 4473219 (lissa)
     private val updateRunnable = object : Runnable {
         override fun run() {
             elapsedTime = SystemClock.elapsedRealtime() - startTime
@@ -64,6 +77,14 @@ class Stopwatch : AppCompatActivity() {
                 addLapTime(formatTime(elapsedTime))
             }
         }
+<<<<<<< HEAD
+=======
+        binding.btnLihat.setOnClickListener {
+            Intent(this, Data_Waktu::class.java).also {
+                startActivity(it)
+            }
+        }
+>>>>>>> 4473219 (lissa)
     }
 
     private fun formatTime(ms: Long): String {
@@ -80,5 +101,10 @@ class Stopwatch : AppCompatActivity() {
             textSize = 18f
         }
         binding.llLapContainer.addView(textView)
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> 4473219 (lissa)
     }
 }

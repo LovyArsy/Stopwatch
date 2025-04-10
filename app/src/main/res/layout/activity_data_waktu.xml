@@ -5,10 +5,42 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/brown"
     tools:context=".Data_Waktu">
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp">
 
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
 
+            <Button
+                android:id="@+id/backButton"
+                android:backgroundTint="@color/mwaw"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Click here fo Kembaliiiii" />
+        </LinearLayout>
 
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Lap Times:"
+            android:textSize="24sp"
+            android:layout_marginTop="30dp"/>
+
+        <ListView
+            android:id="@+id/lapTimesList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"/>
+    </LinearLayout>
+>>>>>>> 4473219 (lissa)
 
 </androidx.constraintlayout.widget.ConstraintLayout>
