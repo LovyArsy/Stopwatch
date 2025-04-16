@@ -1,10 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-
-    android:background="@color/pinkw"
-
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@color/pinkw">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -20,37 +18,49 @@
             android:text="00:00:00:00"
             android:textSize="36sp"
             android:textStyle="bold"
+            android:textColor="@android:color/white"
             android:layout_marginBottom="20dp"/>
 
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:orientation="horizontal">
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginBottom="20dp">
 
             <Button
                 android:id="@+id/btnStopStart"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Start"/>
+                android:text="Start"
+                android:backgroundTint="@color/mwaw"
+                android:textColor="@android:color/white"/>
 
             <Button
                 android:id="@+id/btnReload"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Reset"/>
+                android:text="Reset"
+                android:backgroundTint="@color/mwaw"
+                android:textColor="@android:color/white"
+                android:layout_marginLeft="10dp"/>
 
             <Button
                 android:id="@+id/btnLap"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Lap"/>
+                android:text="Lap"
+                android:backgroundTint="@color/mwaw"
+                android:textColor="@android:color/white"
+                android:layout_marginLeft="10dp"/>
         </LinearLayout>
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Lap Times:"
+            android:text="Lap Times"
             android:textSize="20sp"
+            android:textColor="@android:color/white"
             android:textStyle="bold"
             android:layout_marginTop="20dp"/>
 
@@ -58,15 +68,17 @@
             android:id="@+id/llLapContainer"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="10dp"
+            android:gravity="center"/>
 
-            android:layout_marginBottom="500dp"
-            android:orientation="vertical"/>
         <Button
             android:id="@+id/btnLihat"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Lihat"/>
-
-
+            android:text="Lihat Lap"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="@color/mwaw"
+            android:textColor="@android:color/white"/>
     </LinearLayout>
 </ScrollView>
