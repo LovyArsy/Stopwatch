@@ -52,5 +52,8 @@ class Data_Waktu : AppCompatActivity() {
             startActivity(Intent(this, Stopwatch::class.java))
             finish()
         }
+
+
     }
+
 }
