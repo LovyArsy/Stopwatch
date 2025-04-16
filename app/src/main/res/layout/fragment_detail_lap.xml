@@ -2,7 +2,7 @@
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/pinkw">
+    android:background="@color/white">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -15,9 +15,9 @@
             android:id="@+id/lapDetailsText"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Lap Details"
+            android:text="Lap Times"
             android:textSize="20sp"
-            android:textColor="@android:color/white"
+            android:textColor="@android:color/black"
             android:layout_marginTop="16dp"
             android:textStyle="bold"/>
 
@@ -25,9 +25,9 @@
             android:id="@+id/lapDetailTextView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Lap details will appear here"
+            android:text="Daftar Lap"
             android:textSize="16sp"
-            android:textColor="@android:color/white"
+            android:textColor="@android:color/black"
             android:layout_marginTop="8dp"/>
     </LinearLayout>
 </ScrollView>
