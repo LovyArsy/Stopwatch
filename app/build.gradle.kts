@@ -2,10 +2,7 @@ plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.android)
 }
-<<<<<<< HEAD
 
-=======
->>>>>>> 4473219 (lissa)
 android {
     namespace = "com.smkth.aplikasistopwatch"
     compileSdk = 35
@@ -19,10 +16,7 @@ android {
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
-<<<<<<< HEAD
 
-=======
->>>>>>> 4473219 (lissa)
     buildTypes {
         release {
             isMinifyEnabled = false
@@ -32,29 +26,28 @@ android {
             )
         }
     }
+
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_11
         targetCompatibility = JavaVersion.VERSION_11
     }
+
     kotlinOptions {
         jvmTarget = "11"
     }
-    viewBinding {
-        enable=true;
+
+    buildFeatures {
+        viewBinding = true
     }
 }
-<<<<<<< HEAD
 
 dependencies {
-
-=======
-dependencies {
->>>>>>> 4473219 (lissa)
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)
     implementation(libs.material)
     implementation(libs.androidx.activity)
     implementation(libs.androidx.constraintlayout)
+
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)

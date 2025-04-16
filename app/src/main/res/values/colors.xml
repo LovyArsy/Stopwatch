@@ -2,10 +2,7 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
-<<<<<<< HEAD
-=======
     <color name="brown">#6993B1</color>
     <color name="mwaw">#303035</color>
     <color name="pinkw">#DE96AE</color>
->>>>>>> 4473219 (lissa)
 </resources>
